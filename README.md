@@ -18,7 +18,7 @@ The application also provides logging for service activities, successful backups
 5.Verify that the compiled files are available in bin\Release.
 bin\Release
 
-4. Deployment Instructions
+3. Deployment Instructions
 
 
 Open Developer Command Prompt for Visual Studio as Administrator and navigate to the Release directory.
@@ -30,7 +30,7 @@ InstallUtil.exe DatabaseBackupServiceProject.exe
 
 After successful installation, the service should appear in Windows Services as DatabaseBackupService.
 
-6. Starting and Stopping the Service
+4. Starting and Stopping the Service
 
    
 The service can be controlled through services.msc or from an elevated Command Prompt.
@@ -46,7 +46,7 @@ sc stop DatabaseBackupService
 The Windows Services console can be opened with:
 services.msc
 
-8. Uninstalling the Service
+5. Uninstalling the Service
 
 
 To remove the service from Windows:
@@ -54,7 +54,7 @@ To remove the service from Windows:
 InstallUtil.exe /u DatabaseBackupServiceProject.exe
 
 
-10. Test Log
+6. Test Log
 
     
 The following is an example format. Replace it with the actual log generated during testing.
